@@ -1,0 +1,156 @@
+/*
+ * Globals
+ */
+
+/* Links */
+/*a,
+a:focus,
+a:hover {
+  color: #fff;
+}*/
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;  Prevent inheritance from `body` 
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  /*background-color: #333;*/
+}
+
+body {
+  margin:35px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: url("../images/baobab.jpg") no-repeat center fixed;
+  background-size: 1400px 750px;
+  background-color: black;
+  background-position: 40%;
+  background-attachment: fixed;
+  margin-bottom: 30px;
+
+  font-family: "Bangers";
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+
+.masthead-brand {
+  margin-right: 100px;
+  margin-bottom: 0;
+  color: orange;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  float:right;
+  font-weight: 700;
+  font-size: 30px;
+  color: orange;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/*@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}*/
+#social-icons {
+  margin: 0;
+  padding: 0;
+  background-color:orange;
+  position: fixed;
+  top: 15%;
+  left: 0px;
+}
+
+#social-icons a {
+  display: block;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+}
+
+#social-icons .fa {
+  display: block;
+  font-size: 35px;
+  vertical-align: middle;
+  text-align: center;
+  margin: 10;
+  padding: 8px;
+  color: white;
+  text-shadow: 3px 3px 3px #222;
+}
+
+#social-icons:hover .fa {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.1rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
